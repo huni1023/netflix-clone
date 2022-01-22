@@ -1,0 +1,28 @@
+.PAPER__title {
+  color: white;
+  margin-left: 20px;
+}
+
+.ROW__PAPERs {
+  color: white;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.ROW__PAPERs::-webkit-scrollbar {
+  display: none;
+}
+
+.ROW__PAPER {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.ROW__PAPER:hover {
+  transform: scale(1.08);
+  opacity: 0.7;
+}

@@ -4,6 +4,7 @@ import Row from './Row';
 import requests from './requests';
 import Banner from './Banner';
 import Nav from './Nav';
+import {CoLA_Unggi, CoLA_Huni} from './CoLA';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
       <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies}/>
       <Row title="Comedy Movies" fetchUrl = {requests.fetchComedyMovies}/>
       <Row title="Horror Movies" fetchUrl = {requests.fetchHorrorMovies}/>
-      <Row title="Romance Movies" fetchUrl = {requests.fetchRomanceMovies}/>
+      <Row title="Romance Movies" fetchUrl = {requests.fetchRomanceMovies}/>  
+      <CoLA_Unggi title='2021Year Unggi PT'/>
+      <CoLA_Huni title='2021Year Huni PT'/>
       
     </div>
   );

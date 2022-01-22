@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Nav.css';
 import imageCompression from 'browser-image-compression';
+import logo from './colaandedm.png';
 
 function Nav() {
     const [show, handleShow] = useState(false);
@@ -20,7 +21,8 @@ function Nav() {
       <div className={`nav ${show && "nav__black"}`}>
           <img
             className='nav__logo'
-            src= "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1198px-Netflix_2015_logo.svg.png"
+            // src= "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1198px-Netflix_2015_logo.svg.png"
+            src = {logo}  
             alt="Netflix Logo"
             />
           <img
